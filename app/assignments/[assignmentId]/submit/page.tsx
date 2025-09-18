@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function SubmitPage({ params }: { params: { assignmentId: string } }) {
+export default function SubmitPage({ params }: any) {
   const [code, setCode] = useState("// write your solution here");
   const [videoUrl, setVideoUrl] = useState("");
   const [result, setResult] = useState<any>(null);
@@ -24,8 +24,8 @@ export default function SubmitPage({ params }: { params: { assignmentId: string 
   return (
     <section className="grid gap-4">
       <h1 className="text-2xl font-semibold">Submit: {params.assignmentId}</h1>
-      <textarea value={code} onChange={e=>setCode(e.target.value)} className="min-h-[200px] rounded-xl p-3 bg-black/30 border border-white/10 font-mono" />
-      <input value={videoUrl} onChange={e=>setVideoUrl(e.target.value)} placeholder="Optional video explanation URL" className="rounded-xl px-3 py-2 bg-black/30 border border-white/10" />
+      <textarea value={code} onChange={(e)=>setCode(e.target.value)} className="min-h-[200px] rounded-xl p-3 bg-black/30 border border-white/10 font-mono" />
+      <input value={videoUrl} onChange={(e)=>setVideoUrl(e.target.value)} placeholder="Optional video explanation URL" className="rounded-xl px-3 py-2 bg-black/30 border border-white/10" />
       <div className="flex gap-3">
         <button onClick={run} className="rounded-xl px-4 py-2 border border-white/20">Run Tests</button>
         <button disabled={submitting} onClick={submit} className="rounded-xl px-4 py-2 bg-white text-black">{submitting?"Submitting...":"Submit"}</button>

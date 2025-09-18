@@ -1,9 +1,10 @@
 import assignments from "../../../public/data/assignments.json";
 import quizzes from "../../../public/data/quizzes.json";
 
-export default function AssignmentDetail({ params }: { params: { assignmentId: string } }) {
-  const a = (assignments as any[]).find(x => x.id === params.assignmentId);
-  const q = (quizzes as any[]).find(x => x.assignmentId === params.assignmentId);
+export default async function AssignmentDetail(props: any) {
+  const params = await props.params; // handle Promise-like params
+  const a = (assignments as any[]).find((x) => x.id === params.assignmentId);
+  const q = (quizzes as any[]).find((x) => x.assignmentId === params.assignmentId);
   if (!a) return <div>Not found</div>;
   return (
     <section className="grid gap-4">
