@@ -1,0 +1,17 @@
+[
+  {
+    "id": "csc101",
+    "title": "Intro to Programming",
+    "description": "Variables, loops, functions"
+  },
+  {
+    "id": "csc201",
+    "title": "Data Structures",
+    "description": "Lists, stacks, trees"
+  },
+  {
+    "id": "csc301",
+    "title": "Web Dev",
+    "description": "HTTP, REST, React"
+  }
+]

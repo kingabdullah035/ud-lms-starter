@@ -1,0 +1,18 @@
+[
+  {
+    "id": "a1",
+    "courseId": "csc101",
+    "title": "FizzBuzz",
+    "description": "Implement FizzBuzz",
+    "dueAt": "2025-10-01T23:59:59Z",
+    "type": "code"
+  },
+  {
+    "id": "a2",
+    "courseId": "csc201",
+    "title": "Linked List",
+    "description": "Implement singly linked list",
+    "dueAt": "2025-10-05T23:59:59Z",
+    "type": "file"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "q1",
+    "assignmentId": "a1",
+    "title": "FizzBuzz Quiz",
+    "questions": [
+      {
+        "id": "q1-1",
+        "prompt": "What prints at 15?",
+        "options": [
+          "Fizz",
+          "Buzz",
+          "FizzBuzz",
+          "15"
+        ]
+      },
+      {
+        "id": "q1-2",
+        "prompt": "Modulo operator in JS?",
+        "options": [
+          "%",
+          "//",
+          "mod",
+          "\u00f7"
+        ]
+      }
+    ]
+  }
+]
