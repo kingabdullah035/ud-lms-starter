@@ -1,0 +1,11 @@
+id,submissionId,authorId,createdAt,body,inlineHints
+cmfykip7f002isbkw8miowjif,cmfykiovx0026sbkwn44rgibc,cmfykins90003sbkw5brl4oax,2025-09-24 22:40:59.932,"Partial solution: FizzBuzz prints incorrectly, RomanToInt missing logic. See inline hints.","[{""line"":1,""message"":""Return correct array length.""}]"
+cmfykipgi002ysbkw2wp9dl81,cmfykipax002msbkw02kztbvu,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:00.258,Much improved! All tests pass. Late penalty applied.,
+cmfykiprx003esbkw63xb7ncq,cmfykipiy0032sbkwgohrmwia,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:00.669,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",
+cmfykiq23003usbkwkucnvfdc,cmfykiptg003isbkwsvkegwxv,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:01.036,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",
+cmfykiqa3004asbkwuf3ky4tm,cmfykiq3m003ysbkwpvtszuoh,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:01.324,"Partial solution: FizzBuzz prints incorrectly, RomanToInt missing logic. See inline hints.","[{""line"":1,""message"":""Return correct array length.""}]"
+cmfykiqkq004qsbkw4lyh6ouf,cmfykiqbt004esbkwptey94hc,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:01.707,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",
+cmfykiqsp0056sbkw1g6kki52,cmfykiqmb004usbkwybwmg4wm,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:01.993,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",
+cmfykir2q005msbkw64nfu4wv,cmfykiqu5005asbkws6t64wu5,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:02.355,"Partial solution: FizzBuzz prints incorrectly, RomanToInt missing logic. See inline hints.","[{""line"":1,""message"":""Return correct array length.""}]"
+cmfykircy0062sbkwm5zi1qwg,cmfykir4d005qsbkw698lkeop,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:02.722,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",
+cmfykirkr006isbkwba6uflh1,cmfykiree0066sbkw3w56xjld,cmfykins90003sbkw5brl4oax,2025-09-24 22:41:03.003,"Great job! Clean, idiomatic TypeScript. Nice function decomposition.",

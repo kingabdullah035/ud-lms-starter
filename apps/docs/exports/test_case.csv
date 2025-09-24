@@ -1,0 +1,5 @@
+id,problemId,name,input,expected,weight,hidden
+cmfykiory0021sbkwg3bef2fd,cmfykion3001ysbkwu6d0fapu,n=5,"{""n"":5}","[""1"",""2"",""Fizz"",""4"",""Buzz""]",1,false
+cmfykiory0022sbkw52dckjpd,cmfykion3001ysbkwu6d0fapu,n=15,"{""n"":15}","[""1"",""2"",""Fizz"",""4"",""Buzz"",""Fizz"",""7"",""8"",""Fizz"",""Buzz"",""11"",""Fizz"",""13"",""14"",""FizzBuzz""]",2,true
+cmfykiory0023sbkw1dqbchoy,cmfykior30020sbkwh25pu7z4,III,"{""s"":""III""}",3,1,false
+cmfykiory0024sbkwrlk9zc7a,cmfykior30020sbkwh25pu7z4,MCMXCIV,"{""s"":""MCMXCIV""}",1994,2,true

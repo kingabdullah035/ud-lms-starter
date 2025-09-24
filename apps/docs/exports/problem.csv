@@ -1,0 +1,3 @@
+id,assignmentId,order,title,prompt,maxPoints,starterCode,language,timeLimitMs,memoryLimitMb
+cmfykion3001ysbkwu6d0fapu,cmfykiohd001psbkwyr58l4d7,1,FizzBuzz Extended,"Print numbers 1..n; multiples of 3 -> Fizz, 5 -> Buzz, both -> FizzBuzz.",50,export function fizzbuzz(n: number): string[] { /* your code */ return []; },TYPESCRIPT,2000,256
+cmfykior30020sbkwh25pu7z4,cmfykiohd001psbkwyr58l4d7,2,Roman to Integer,Convert Roman numerals to integers.,50,export function romanToInt(s: string): number { /* your code */ return 0; },TYPESCRIPT,2000,256

@@ -1,0 +1,5 @@
+id,courseId,title,type,description,points,dueAt,availableAt,visibility,allowResubmit,latePenaltyPct,createdAt,updatedAt
+cmfykiofz001nsbkwofvouckb,cmfykio58000jsbkwvwnejfej,LMS MVP Proposal,URL,Submit a public doc link describing your LMS MVP scope.,50,2025-08-29 01:33:49.046,2025-08-26 16:53:19.572,PUBLISHED,true,,2025-09-24 22:40:58.943,2025-09-24 22:40:58.943
+cmfykiohd001psbkwyr58l4d7,cmfykio58000jsbkwvwnejfej,Programming Problem Set 1,CODE,Solve two problems: FizzBuzz variants & Roman Numerals.,100,2025-09-05 12:44:47.587,2025-08-29 01:53:07.972,PUBLISHED,true,10,2025-09-24 22:40:58.994,2025-09-24 22:40:58.994
+cmfykioir001rsbkw1hdoy6m2,cmfykio58000jsbkwvwnejfej,Design Notebook 01,NOTEBOOK,Reflect on your design decisions (Markdown or .ipynb).,30,2025-08-30 10:27:27.65,2025-08-31 15:04:21.182,PUBLISHED,true,,2025-09-24 22:40:59.044,2025-09-24 22:40:59.044
+cmfykiojf001tsbkwy4gsstpa,cmfykio58000ksbkw3p4o218m,Syscall Report (PDF),FILE_UPLOAD,Write-up on adding a new xv6 system call.,80,2025-09-11 07:58:40.856,2025-08-27 18:11:57.086,PUBLISHED,true,,2025-09-24 22:40:59.068,2025-09-24 22:40:59.068

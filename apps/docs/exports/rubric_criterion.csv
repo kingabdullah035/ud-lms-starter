@@ -1,0 +1,4 @@
+id,assignmentId,order,label,maxPoints,description
+cmfykiok5001usbkwlgft0xxt,cmfykiohd001psbkwyr58l4d7,1,Correctness,70,Passes public & hidden tests
+cmfykiok5001vsbkwgc9vlw26,cmfykiohd001psbkwyr58l4d7,2,Code Quality,20,"Readable, idiomatic, documented"
+cmfykiok5001wsbkwrnni3yy2,cmfykiohd001psbkwyr58l4d7,3,Edge Cases,10,Handles tricky inputs
