@@ -1,12 +1,13 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")          // pooled (pgbouncer) -> app runtime
+  directUrl = env("DIRECT_DATABASE_URL")   // direct 5432 -> migrations
 }
+
 
 model Assignment {
   id              String            @id
