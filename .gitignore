@@ -4,3 +4,14 @@ out
 .DS_Store
 .env*
 .env
+
+# backend ignores
+api/api/.env
+api/api/node_modules
+api/api/dist
+
+# backend ignores
+api/api/.env
+api/api/node_modules
+api/api/dist
+api/api/generated

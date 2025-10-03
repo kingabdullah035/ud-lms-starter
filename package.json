@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch",
+    "postinstall": "prisma generate",
+    "prisma:migrate:deploy": "prisma migrate deploy",
+    "seed": "ts-node --compiler-options {\"module\":\"commonjs\"} prisma/seed.ts"
   },
   "dependencies": {
-    "@prisma/client": "^6.16.2",
+    "@nestjs/config": "^4.0.2",
+    "@prisma/client": "^6.16.3",
     "next": "15.5.3",
     "react": "19.1.1",
     "react-dom": "19.1.1"
@@ -21,9 +26,15 @@
     "@types/react-dom": "latest",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "prisma": "^6.16.2",
+    "prisma": "^6.16.3",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.5",
-    "typescript": "latest"
-  }
+    "typescript": "latest",
+    "ts-node": "^10.9.2"
+  },
+
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"commonjs\"} prisma/seed.ts"
+}
+
 }
