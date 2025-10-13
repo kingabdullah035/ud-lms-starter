@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* quick sanity check that CSS is loading */
+body { border-top: 4px solid transparent; } /* change to red if you want to test */
+
+/* Light/Dark base */
+:root { color-scheme: light dark; }
+html, body, #root { height: 100%; }
+
+body {
+  @apply m-0 bg-white text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Small helpers that your routes use */
+.container { @apply mx-auto max-w-5xl p-6; }
+.nav a     { @apply px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800 [&.active]:underline; }
+.card      { @apply rounded-xl border border-zinc-200/60 dark:border-white/10 p-4 shadow-sm hover:shadow transition; }
