@@ -1,13 +1,14 @@
-export const API_BASE = import.meta.env.VITE_API_BASE as string
-
-export async function api<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
-    ...init,
-    headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
-  })
-  if (!res.ok) {
-    const text = await res.text().catch(() => '')
-    throw new Error(text || `HTTP ${res.status}`)
-  }
-  return res.json() as Promise<T>
+// web/src/lib/api.ts
+const BASE = import.meta.env.VITE_API_BASE ?? '' // '' in dev if proxying to local
+export const api = {
+  courses: async () => {
+    const r = await fetch(`${BASE}/api/courses`, { credentials: 'include' })
+    if (!r.ok) throw new Error(`GET /api/courses ${r.status}`)
+    return r.json()
+  },
+  assignments: async () => {
+    const r = await fetch(`${BASE}/api/assignments`, { credentials: 'include' })
+    if (!r.ok) throw new Error(`GET /api/assignments ${r.status}`)
+    return r.json()
+  },
 }
