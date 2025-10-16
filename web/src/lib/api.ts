@@ -1,14 +1,13 @@
-// web/src/lib/api.ts
-const BASE = import.meta.env.VITE_API_BASE ?? '' // '' in dev if proxying to local
+const API_BASE =
+  (import.meta.env.VITE_API_BASE ?? '').replace(/\/$/, '') // strip trailing slash
+
+async function getJson<T>(path: string): Promise<T> {
+  const res = await fetch(`${API_BASE}/api${path}`, { headers: { Accept: 'application/json' } })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json() as Promise<T>
+}
+
 export const api = {
-  courses: async () => {
-    const r = await fetch(`${BASE}/api/courses`, { credentials: 'include' })
-    if (!r.ok) throw new Error(`GET /api/courses ${r.status}`)
-    return r.json()
-  },
-  assignments: async () => {
-    const r = await fetch(`${BASE}/api/assignments`, { credentials: 'include' })
-    if (!r.ok) throw new Error(`GET /api/assignments ${r.status}`)
-    return r.json()
-  },
+  courses: () => getJson('/courses'),
+  assignments: () => getJson('/assignments'),
 }
