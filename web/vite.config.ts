@@ -1,14 +1,47 @@
+// import { defineConfig, loadEnv } from 'vite'
+// import react from '@vitejs/plugin-react'
+// import tsconfigPaths from 'vite-tsconfig-paths'
+// import tailwind from '@tailwindcss/vite'
+
+// export default defineConfig(({ mode }) => {
+//   const env = loadEnv(mode, process.cwd(), '')
+//   const API_BASE = env.VITE_API_BASE || 'http://localhost:4000'
+
+//   return {
+//     plugins: [react(), tsconfigPaths(), tailwind()],
+//     server: {
+//       port: 3000,
+//       proxy: {
+//         '/api': {
+//           target: API_BASE,
+//           changeOrigin: true,
+//           secure: false,
+//         },
+//       },
+//     },
+//   }
+// })
+// web/vite.config.ts
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import tailwind from '@tailwindcss/vite'
+import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   const API_BASE = env.VITE_API_BASE || 'http://localhost:4000'
 
   return {
-    plugins: [react(), tsconfigPaths(), tailwind()],
+    plugins: [
+      react(),
+      tsconfigPaths(),
+      tailwind(),
+      TanStackRouterVite({
+        routesDirectory: './src/routes', // where your route files live
+        // outDir defaults to ./src/routeTree.gen.ts (perfect)
+      }),
+    ],
     server: {
       port: 3000,
       proxy: {
@@ -21,3 +54,6 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
+
+
+
